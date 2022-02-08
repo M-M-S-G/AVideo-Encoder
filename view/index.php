@@ -562,10 +562,11 @@ if (!empty($_GET['noNavbar'])) {
                                     ?>>
                                     <a data-toggle="tab" href="#encoding" class="nav-link"><span class="glyphicon glyphicon-tasks"></span> Sharing Queue</a>
                                 </li>
+                                <?php if (Login::isAdmin()) { ?>
                                 <li class="nav-item <?php echo getCSSAnimationClassAndStyle('animate__bounceInDown', 'tabsRight', 0.1); ?>">
                                     <a data-toggle="tab" href="#log" class="nav-link"><span class="glyphicon glyphicon-cog"></span> Queue Log</a>
                                 </li>
-
+                                <?php } ?>
                                 <?php
                                 if (Login::isAdmin()) {
                                     if (empty($global['disableConfigurations'])) {
