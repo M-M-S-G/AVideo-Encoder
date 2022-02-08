@@ -82,11 +82,12 @@
                 <span>Add files...</span>
                 <input type="file" name="files[]" multiple>
             </span>
+            <!--
             <button type="submit" class="btn btn-primary start col-sm-4" style="border-top-right-radius: 0; border-bottom-right-radius: 0;">
                 <i class="glyphicon glyphicon-upload"></i>
                 <span>Start upload</span>
             </button>
-            <!--
+
             <button type="reset" class="btn btn-warning cancel col-sm-4" style="border-radius: 0;">
                 <i class="glyphicon glyphicon-ban-circle"></i>
                 <span>Cancel upload</span>
@@ -95,8 +96,8 @@
                 <i class="glyphicon glyphicon-trash"></i>
                 <span>Delete</span>
             </button>
-            -->
             <input type="checkbox" class="toggle" name="selectAll" >
+            -->
             <label for="selectAll"> Select All </label>
             <!-- The global file processing state -->
             <span class="fileupload-process"></span>
