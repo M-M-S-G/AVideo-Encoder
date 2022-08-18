@@ -89,7 +89,7 @@ if (!Login::canUpload()) {
         $obj->msg = "There is no streamer site";
     } else {
         // if it is a channel
-        $rexexp = "/^(http(s)?:\/\/)?((w){3}.)?youtu(be|.be)?(\.com)?\/(channel|user).+/";
+        $rexexp = "/^(http(s)?:\/\/)?((w){3}.)?youtu(be|.be)?(\.com)?\/(c|user).+/";
         if (preg_match($rexexp, $_POST['videoURL'])) {
             if (!Login::canBulkEncode()){
                 $obj->msg = "Channel Import is disabled";
