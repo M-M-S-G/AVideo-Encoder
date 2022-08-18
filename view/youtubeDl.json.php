@@ -112,7 +112,7 @@ if (!Login::canUpload()) {
                     continue;
                 }
                 error_log(($i)." Process Video {$list[$i]->id}");
-                $url = "https://www.youtube.com/watch?v={$list[$i]->url}";
+                $url = "$list[$i]->url";
                 $obj = addVideo($url, $streamers_id, $list[$i]->title);
             }
             error_log("Process Done Total {$i}");
