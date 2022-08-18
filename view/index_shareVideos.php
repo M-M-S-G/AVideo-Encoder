@@ -24,7 +24,7 @@
             }
             if (Login::canBulkEncode()) {
                 ?>
-                <li><a data-toggle="tab" href="#bulk"><center><span class="glyphicon glyphicon-duplicate"></span><br>Bulk Encode</center></a></li>
+                <!--<li><a data-toggle="tab" href="#bulk"><center><span class="glyphicon glyphicon-duplicate"></span><br>Bulk Encode</center></a></li>-->
             <?php } ?>
         </ul>
         <div class="tab-content" style="padding: 10px 0;">
