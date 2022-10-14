@@ -96,7 +96,7 @@ if (!Login::canUpload()) {
                 die(json_encode($obj));
             }
             $start = 0;
-            $end = 100;
+            $end = 1000;
             if(!empty($_POST['startIndex'])){
                 $start = $current = intval($_POST['startIndex']);                
             }
